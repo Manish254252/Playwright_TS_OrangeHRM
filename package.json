@@ -1,0 +1,25 @@
+{
+  "name": "playwright_orangehrm",
+  "version": "1.0.0",
+  "description": "OrangeHRM Web App Automation Using Playwright",
+  "main": "index.js",
+  "scripts": {},
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manish254252/Playwright_TS_OrangeHRM.git"
+  },
+  "keywords": [
+    "Playwright"
+  ],
+  "author": "Manish Solanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manish254252/Playwright_TS_OrangeHRM/issues"
+  },
+  "homepage": "https://github.com/Manish254252/Playwright_TS_OrangeHRM#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.6"
+  }
+}
