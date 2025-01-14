@@ -4,7 +4,7 @@
   "description": "OrangeHRM Web App Automation Using Playwright",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --format cucumber-js-extent:spark.html"
+    "test": "cucumber-js --format cucumber-js-extent:extentReport/spark.html"
   },
   "type": "module",
   "repository": {
