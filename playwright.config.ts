@@ -1,12 +1,7 @@
-import { defineConfig, devices } from '@playwright/test';
-import { chromium } from '@playwright/test';
-
-const browser = await chromium.launch({
-  headless: false,
-  executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
-});
+import { defineConfig, devices, LaunchOptions } from '@playwright/test';
 
 export default defineConfig({
+
   testDir: './tests',
   fullyParallel: true,
 
@@ -16,21 +11,9 @@ export default defineConfig({
   reporter: 'html',
   use: {
     trace: 'on-first-retry',
-    defaultBrowserType: 'chromium',
+    channel: 'chrome',
+    headless: false,
+
   },
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-  ],
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+
 });
