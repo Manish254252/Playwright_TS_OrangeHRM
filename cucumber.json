@@ -17,6 +17,9 @@
             "summary",
             "progress-bar",
             "json:./cucumber-report.json"
-        ]
+        ],
+        "scripts": {
+            "test": "cucumber-js --format cucumber-js-extent:spark.html"
+        }
     }
 }
